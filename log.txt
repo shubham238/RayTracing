@@ -1,0 +1,14 @@
+object reader has been tested..
+data is correctly parsed from file.. 
+Structures created successfully
+Shadow working..
+Multiple light working, sphere intersection working, plane intersection working!
+
+Problem: X is -Y, and Y is X.. Co-ordinates not correct, for some reason. Don't know why!
+Solved.
+Now set!
+
+Reflection implemented... Don't know about correctness, but it works!
+Now zipping, and moving on to transmission.
+
+

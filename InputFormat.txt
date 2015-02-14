@@ -1,0 +1,62 @@
+For sphere:
+	SPHERE <number of spheres>
+	<center x> <center y> <center z> 
+	<radius>
+	<ka_x> <ka_y> <ka_z>
+	<kd_x> <kd_y> <kd_z>
+	<ks_x> <ks_y> <ks_z>
+	mu
+	ktr
+	<specular_power_coefficient>
+	ktg
+	
+For plane:
+	PLANE <number of planes>
+	<number of points>
+	<px> <py> <pz>
+	.
+	.
+	.
+	<ka_x> <ka_y> <ka_z>
+	<kd_x> <kd_y> <kd_z>
+	<ks_x> <ks_y> <ks_z>
+	mu
+	ktr
+	<specular_power_coefficient>
+	ktg
+
+For surface (here the points may not be coplanar):
+	SURFACE <number of surfaces>
+	<number of points>
+	<px> <py> <pz>
+	.
+	.
+	.
+	<ka_x> <ka_y> <ka_z>
+	<kd_x> <kd_y> <kd_z>
+	<ks_x> <ks_y> <ks_z>
+	mu
+	ktr
+	<specular_power_coefficient>
+	ktg
+After this the light sources follow. If there is no light source, then specify number of lights as zero, but don't skip this line, otherwise there'll be error.
+	LIGHT <number of light sources>
+	<specify each light source>
+
+Specifying a light source:
+	<px> <py> <pz>
+	<i_red> <i_green> <i_blue>
+
+Last line would specify ambient light
+AMBIENT
+<ax> <ay> <az>
+And we are done for input of files.
+
+The format for viewsystem is 
+<VRPx> <VRPy> <VRPz>
+<nx> <ny> <nz>
+<upx> <upy> <upz>
+<eyex> <eyey> <eyez>
+<ulx> <uly> <ulz>
+<lrx> <lry> <lrz>
+MAXROW MAXCOL
